@@ -2,9 +2,7 @@ import React from "react";
 import HafCard from "./HafCard";
 
 const cardArray = ({robots}) =>{
-    if (true){
-        throw new Error("we hot !")
-    }
+   
     return(<div className="cardWrapper">
         {robots.map((e,i) =>{
             return(<HafCard 
