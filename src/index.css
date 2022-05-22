@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to left, rgba(7,27,82,1) , rgba(0,128,128,1));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  background-color: lightgreen;
+  width: 11em;
+  height: 16em;
+  padding: 3em;
+  margin: 1em;
+  border-radius: 1em;
+  transition: 0.3s  ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgb(203, 180, 180);
+  
+}
+.description, .card{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+
+}
+.description p, .description h3{
+  text-align: center;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.cardWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+}
+.card:active{
+  transform: scale(0.8);
+  
+}
+
+.finalApp{
+  text-align: center;
+}
+.search{
+  border: 1.5px solid blue;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(217, 214, 237);
+}
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('./containers/SEGA.woff') format('woff');
+  }
+#textRobo{
+  font-family: 'SEGA LOGO FONT';
+  font-weight: 200;
+  color: #0ccac4;
+  font-size: 40px;
+}
